@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<TITLE>Mendeleev</TITLE>
+	<STYLE>
+	*
+	table, th, td
+	{
+		/*border-collapse: collapse;*/
+		border: 1px solid rgba(255,255,255,.1);
+	}
+	table
+	{
+		width: 80%;
+		margin: 10%;
+	}
+	td
+	{
+		padding: 0px;
+	}
+
+	.back {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfwHxwlhnH52WwgpaOCVJPE_JtlfOasTnuhKut0B579-OW6xdY")}
+	.group
+	{
+		text-align: center;
+		border: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: transparent;
+	}
+	.angroup
+	{
+		text-align: center;
+		border: 10px;
+		padding-right: 20px;
+		padding-left: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: white;
+	}
+	.apgroup
+	{
+		text-align: center;
+		border: 40px;
+		border-bottom: 100px;
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: transparent;
+	}
+	.agroup
+	{
+
+	}
+	#red
+	{
+		background-color: #ff704d;
+	}
+	#zov
+	{
+		background-color: yellow;
+	}
+	#syn
+	{
+		background-color: #23a5f6;
+	}
+	#pur
+	{
+		background-color: #ad33ff;
+	}
+	#ora
+	{
+		background-color: #ffad33;
+	}
+	#bir
+	{
+		background-color: #99ebff;
+	}
+	#fio
+	{
+		background-color: #d699ff;
+	}
+	#zel
+	{
+		background-color: #00e673;
+	}
+	#roz
+	{
+		background-color: #ff99ff;
+	}
+	#sroz
+	{
+		background-color: #e600e6;
+	}
+	.number
+	{
+		display: block;
+		text-align: left;
+		font-size: 10px;
+	}
+	.name
+	{
+		display: block;
+		font-size: 15px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.val
+	{
+		display: block;
+		float: right;
+		margin: 0px;
+		font-size: 10px;
+	}
+	</STYLE>
+</HEAD>
+<BODY class="back">
+	<DIV contenteditable="true" align="center">
+	<TABLE style="empty-cells:show; margin-bottom:5px; margin-top:0px; margin-left: 10%;">
+		<TR>
+			<TD>
+				<P class="angroup">I</P>
+			</TD>
+			<TD>
+				<P class="angroup">II</P>
+			</TD>
+			<TD>
+				<P class="angroup">III</P>
+			</TD>
+			<TD>
+				<P class="angroup">IV</P>
+			</TD>
+			<TD>
+				<P class="angroup">V</P>
+			</TD>
+			<TD>
+				<P class="angroup">VI</P>
+			</TD>
+			<TD>
+				<P class="angroup">VII</P>
+			</TD>
+			<TD>
+				<P class="angroup">VIII</P>
+			</TD>
+			<TD>
+				<P class="angroup">IX</P>
+			</TD>
+			<TD>
+				<P class="angroup">X</P>
+			</TD>
+			<TD>
+				<P class="angroup">XI</P>
+			</TD>
+			<TD>
+				<P class="angroup">XII</P>
+			</TD>
+			<TD>
+				<P class="angroup">XIII</P>
+			</TD>
+			<TD>
+				<P class="angroup">XIV</P>
+			</TD>
+			<TD>
+				<P class="angroup">XV</P>
+			</TD>
+			<TD>
+				<P class="angroup">XVI</P>
+			</TD>
+			<TD>
+				<P class="angroup">XVII</P>
+			</TD>
+			<TD>
+				<P class="angroup">XVIII</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="group" id="syn">
+				<DIV class="number">1</DIV>
+				<DIV class="name">H</DIV>
+				<DIV class="val">1.008</DIV>
+			</TD>
+			<TD COLSPAN="16" class="group"></TD>
+			<TD class="group" id="pur">
+				<DIV class="number">2</DIV>
+				<DIV class="name">He</DIV>
+				<DIV class="val">4.003</DIV>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="group" id="red">
+				<DIV class="number">3</DIV>
+				<DIV class="name">Li</DIV>
+				<DIV class="val">6.941</DIV>
+			</TD>
+			<TD class="group" id="ora">
+				<DIV class="number">4</DIV>
+				<DIV class="name">Be</DIV>
+				<DIV class="val">9.012</DIV>
+			</TD>
+			<TD COLSPAN="10" class="group"></TD>
+			<TD class="group" id="bir">
+				<DIV class="number">5</DIV>
+				<DIV class="name">B</DIV>
+				<DIV class="val">10.811</DIV>
+			</TD>
+			<TD class="group" id="syn">
+				<DIV class="number">6</DIV>
+				<DIV class="name">C</DIV>
+				<DIV class="val">12.011</DIV>
+			</TD>
+			<TD class="group" id="syn">
+				<DIV class="number">7</DIV>
+				<DIV class="name">N</DIV>
+				<DIV class="val">14.007</DIV>
+			</TD>
+			<TD class="group" id="syn">
+				<DIV class="number">8</DIV>
+				<DIV class="name">O</DIV>
+				<DIV class="val">15.999</DIV>
+			</TD>
+			<TD class="group" id="fio">
+				<DIV class="number">9</DIV>
+				<DIV class="name">F</DIV>
+				<DIV class="val">18.998</DIV>
+			</TD>
+			<TD class="group" id="pur">
+				<DIV class="number">10</DIV>
+				<DIV class="name">Ne</DIV>
+				<DIV class="val">20.180</DIV>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="group" id="red">
+				<DIV class="number">11</DIV>
+				<DIV class="name">Na</DIV>
+				<DIV class="val">22.990</DIV>
+			</TD>
+			<TD class="group" id="ora">
+				<DIV class="number">12</DIV>
+				<DIV class="name">Mg</DIV>
+				<DIV class="val">24.305</DIV>
+			</TD>
+			<TD COLSPAN="10" class="group"></TD>
+			<TD class="group" id="zel">
+				<DIV class="number">13</DIV>
+				<DIV class="name">Al</DIV>
+				<DIV class="val">26.982</DIV>
+			</TD>
+			<TD class="group" id="bir">
+				<DIV class="number">14</DIV>
+				<DIV class="name">Si</DIV>
+				<DIV class="val">28.086</DIV>
+			</TD>
+			<TD class="group" id="syn">
+				<DIV class="number">15</DIV>
+				<DIV class="name">P</DIV>
+				<DIV class="val">30.974</DIV>
+			</TD>
+			<TD class="group" id="syn">
+				<DIV class="number">16</DIV>
+				<DIV class="name">S</DIV>
+				<DIV class="val">32.066</DIV>
+			</TD>
+			<TD class="group" id="fio">
+				<DIV class="number">17</DIV>
+				<DIV class="name">Cl</DIV>
+				<DIV class="val">35.453</DIV>
+			</TD>
+			<TD class="group" id="pur">
+				<DIV class="number">18</DIV>
+				<DIV class="name">Ar</DIV>
+				<DIV class="val">39.948</DIV>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="group" id="red">
+				<DIV class="number">19</DIV>
+				<DIV class="name">K</DIV>
+				<DIV class="val">39.098</DIV>
+			</TD>
+			<TD class="group" id="ora">
+				<DIV class="number">20</DIV>
+				<DIV class="name">Ca</DIV>
+				<DIV class="val">40.078</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">21</DIV>
+				<DIV class="name">Sc</DIV>
+				<DIV class="val">44.956</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">22</DIV>
+				<DIV class="name">Ti</DIV>
+				<DIV class="val">47.867</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">23</DIV>
+				<DIV class="name">V</DIV>
+				<DIV class="val">50.942</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">24</DIV>
+				<DIV class="name">Cr</DIV>
+				<DIV class="val">51.996</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">25</DIV>
+				<DIV class="name">Mn</DIV>
+				<DIV class="val">54.938</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">26</DIV>
+				<DIV class="name">Fe</DIV>
+				<DIV class="val">55.84</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">27</DIV>
+				<DIV class="name">Co</DIV>
+				<DIV class="val">58.933</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">28</DIV>
+				<DIV class="name">Ni</DIV>
+				<DIV class="val">58.693</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">29</DIV>
+				<DIV class="name">Cu</DIV>
+				<DIV class="val">63.546</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">30</DIV>
+				<DIV class="name">Zn</DIV>
+				<DIV class="val">65.38</DIV>
+			</TD>
+			<TD class="group" id="zel">
+				<DIV class="number">31</DIV>
+				<DIV class="name">Ga</DIV>
+				<DIV class="val">69.732</DIV>
+			</TD>
+			<TD class="group" id="bir">
+				<DIV class="number">32</DIV>
+				<DIV class="name">Ge</DIV>
+				<DIV class="val">72.631</DIV>
+			</TD>
+			<TD class="group" id="bir">
+				<DIV class="number">33</DIV>
+				<DIV class="name">As</DIV>
+				<DIV class="val">74.922</DIV>
+			</TD>
+			<TD class="group" id="syn">
+				<DIV class="number">34</DIV>
+				<DIV class="name">Se</DIV>
+				<DIV class="val">78.971</DIV>
+			</TD>
+			<TD class="group" id="fio">
+				<DIV class="number">35</DIV>
+				<DIV class="name">Br</DIV>
+				<DIV class="val">79.904</DIV>
+			</TD>
+			<TD class="group" id="pur">
+				<DIV class="number">36</DIV>
+				<DIV class="name">Kr</DIV>
+				<DIV class="val">84.798</DIV>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="group" id="red">
+				<DIV class="number">37</DIV>
+				<DIV class="name">Rb</DIV>
+				<DIV class="val">85.468</DIV>
+			</TD>
+			<TD class="group" id="ora">
+				<DIV class="number">38</DIV>
+				<DIV class="name">Sr</DIV>
+				<DIV class="val">87.62</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">39</DIV>
+				<DIV class="name">Y</DIV>
+				<DIV class="val">88.906</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">40</DIV>
+				<DIV class="name">Zr</DIV>
+				<DIV class="val">91.224</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">41</DIV>
+				<DIV class="name">Nb</DIV>
+				<DIV class="val">92.906</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">42</DIV>
+				<DIV class="name">Mo</DIV>
+				<DIV class="val">95.95</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">43</DIV>
+				<DIV class="name">Tc</DIV>
+				<DIV class="val">98.907</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">44</DIV>
+				<DIV class="name">Ru</DIV>
+				<DIV class="val">101.07</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">45</DIV>
+				<DIV class="name">Rh</DIV>
+				<DIV class="val">102.906</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">46</DIV>
+				<DIV class="name">Pd</DIV>
+				<DIV class="val">106.42</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">47</DIV>
+				<DIV class="name">Ag</DIV>
+				<DIV class="val">107.868</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">48</DIV>
+				<DIV class="name">Cd</DIV>
+				<DIV class="val">112.411</DIV>
+			</TD>
+			<TD class="group" id="zel">
+				<DIV class="number">49</DIV>
+				<DIV class="name">In</DIV>
+				<DIV class="val">114.818</DIV>
+			</TD>
+			<TD class="group" id="zel">
+				<DIV class="number">50</DIV>
+				<DIV class="name">Sn</DIV>
+				<DIV class="val">118.711</DIV>
+			</TD>
+			<TD class="group" id="bir">
+				<DIV class="number">51</DIV>
+				<DIV class="name">Sb</DIV>
+				<DIV class="val">121.760</DIV>
+			</TD>
+			<TD class="group" id="bir">
+				<DIV class="number">52</DIV>
+				<DIV class="name">Te</DIV>
+				<DIV class="val">127.6</DIV>
+			</TD>
+			<TD class="group" id="fio">
+				<DIV class="number">53</DIV>
+				<DIV class="name">I</DIV>
+				<DIV class="val">126.904</DIV>
+			</TD>
+			<TD class="group" id="pur">
+				<DIV class="number">54</DIV>
+				<DIV class="name">Xe</DIV>
+				<DIV class="val">131.294</DIV>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="group" id="red">
+				<DIV class="number">55</DIV>
+				<DIV class="name">Cs</DIV>
+				<DIV class="val">132.905</DIV>
+			</TD>
+			<TD class="group" id="ora">
+				<DIV class="number">56</DIV>
+				<DIV class="name">Ba</DIV>
+				<DIV class="val">137.328</DIV>
+			</TD>
+			<TD class="group" id="roz">
+				<DIV class="number">57-71</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">72</DIV>
+				<DIV class="name">Hf</DIV>
+				<DIV class="val">178.49</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">73</DIV>
+				<DIV class="name">Ta</DIV>
+				<DIV class="val">180.948</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">74</DIV>
+				<DIV class="name">W</DIV>
+				<DIV class="val">183.84</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">75</DIV>
+				<DIV class="name">Re</DIV>
+				<DIV class="val">186.207</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">76</DIV>
+				<DIV class="name">Os</DIV>
+				<DIV class="val">190.23</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">77</DIV>
+				<DIV class="name">Ir</DIV>
+				<DIV class="val">192.217</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">78</DIV>
+				<DIV class="name">Pt</DIV>
+				<DIV class="val">195.085</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">79</DIV>
+				<DIV class="name">Au</DIV>
+				<DIV class="val">196.967</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">80</DIV>
+				<DIV class="name">Hg</DIV>
+				<DIV class="val">200.592</DIV>
+			</TD>
+			<TD class="group" id="zel">
+				<DIV class="number">81</DIV>
+				<DIV class="name">Tl</DIV>
+				<DIV class="val">204.383</DIV>
+			</TD>
+			<TD class="group" id="zel">
+				<DIV class="number">82</DIV>
+				<DIV class="name">Pb</DIV>
+				<DIV class="val">207.2</DIV>
+			</TD>
+			<TD class="group" id="zel">
+				<DIV class="number">83</DIV>
+				<DIV class="name">Bi</DIV>
+				<DIV class="val">208.980</DIV>
+			</TD>
+			<TD class="group" id="bir">
+				<DIV class="number">84</DIV>
+				<DIV class="name">Po</DIV>
+				<DIV class="val">208.982</DIV>
+			</TD>
+			<TD class="group" id="fio">
+				<DIV class="number">85</DIV>
+				<DIV class="name">At</DIV>
+				<DIV class="val">209.987</DIV>
+			</TD>
+			<TD class="group" id="pur">
+				<DIV class="number">86</DIV>
+				<DIV class="name">Rn</DIV>
+				<DIV class="val">222.018</DIV>
+			</TD>
+		</TR>
+			<TR>
+			<TD class="group" id="red">
+				<DIV class="number">87</DIV>
+				<DIV class="name">Fr</DIV>
+				<DIV class="val">223.020</DIV>
+			</TD>
+			<TD class="group" id="ora">
+				<DIV class="number">88</DIV>
+				<DIV class="name">Ra</DIV>
+				<DIV class="val">226.025</DIV>
+			</TD>
+			<TD class="group" id="sroz">
+				<DIV class="number">89-103</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">104</DIV>
+				<DIV class="name">Rf</DIV>
+				<DIV class="val">261</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">105</DIV>
+				<DIV class="name">Db</DIV>
+				<DIV class="val">262</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">106</DIV>
+				<DIV class="name">Sg</DIV>
+				<DIV class="val">266</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">107</DIV>
+				<DIV class="name">Bh</DIV>
+				<DIV class="val">264</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">108</DIV>
+				<DIV class="name">Hs</DIV>
+				<DIV class="val">269</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">109</DIV>
+				<DIV class="name">Mt</DIV>
+				<DIV class="val">268</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">110</DIV>
+				<DIV class="name">Ds</DIV>
+				<DIV class="val">269</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">111</DIV>
+				<DIV class="name">Rg</DIV>
+				<DIV class="val">272</DIV>
+			</TD>
+			<TD class="group" id="zov">
+				<DIV class="number">112</DIV>
+				<DIV class="name">Cn</DIV>
+				<DIV class="val">277</DIV>
+			</TD>
+			<TD class="group" id="zel">
+				<DIV class="number">113</DIV>
+				<DIV class="name">Nh</DIV>
+				<DIV class="val">unknown</DIV>
+			</TD>
+			<TD class="group" id="zel">
+				<DIV class="number">114</DIV>
+				<DIV class="name">Fl</DIV>
+				<DIV class="val">289</DIV>
+			</TD>
+			<TD class="group" id="zel">
+				<DIV class="number">115</DIV>
+				<DIV class="name">Mc</DIV>
+				<DIV class="val">unknown</DIV>
+			</TD>
+			<TD class="group" id="zel">
+				<DIV class="number">116</DIV>
+				<DIV class="name">Lv</DIV>
+				<DIV class="val">298</DIV>
+			</TD>
+			<TD class="group" id="fio">
+				<DIV class="number">117</DIV>
+				<DIV class="name">Ts</DIV>
+				<DIV class="val">unknown</DIV>
+			</TD>
+			<TD class="group" id="pur">
+				<DIV class="number">118</DIV>
+				<DIV class="name">Og</DIV>
+				<DIV class="val">unknown</DIV>
+			</TD>
+		</TR>
+	</TABLE>
+</DIV>
+<DIV contenteditable="true">
+	<TABLE style="empty-cells:show; margin : 3% 10% 10%;">
+		<TR>
+			<TD class="group" id="roz">
+				<DIV class="number">57</DIV>
+				<DIV class="name">La</DIV>
+				<DIV class="val">138.905</DIV>
+			</TD>
+				<TD class="group" id="roz">
+				<DIV class="number">58</DIV>
+				<DIV class="name">Ce</DIV>
+				<DIV class="val">140.116</DIV>
+			</TD>
+				<TD class="group" id="roz">
+				<DIV class="number">59</DIV>
+				<DIV class="name">Pr</DIV>
+				<DIV class="val">140.908</DIV>
+			</TD>
+				<TD class="group" id="roz">
+				<DIV class="number">60</DIV>
+				<DIV class="name">Nd</DIV>
+				<DIV class="val">144.242</DIV>
+			</TD>
+			<TD class="group" id="roz">
+				<DIV class="number">61</DIV>
+				<DIV class="name">Pm</DIV>
+				<DIV class="val">144.913</DIV>
+			</TD>
+				<TD class="group" id="roz">
+				<DIV class="number">62</DIV>
+				<DIV class="name">Sm</DIV>
+				<DIV class="val">150.36</DIV>
+			</TD>
+				<TD class="group" id="roz">
+				<DIV class="number">63</DIV>
+				<DIV class="name">Eu</DIV>
+				<DIV class="val">151.964</DIV>
+			</TD>
+				<TD class="group" id="roz">
+				<DIV class="number">64</DIV>
+				<DIV class="name">Gd</DIV>
+				<DIV class="val">157.25</DIV>
+			</TD>
+			<TD class="group" id="roz">
+				<DIV class="number">65</DIV>
+				<DIV class="name">Tb</DIV>
+				<DIV class="val">158.925</DIV>
+			</TD>
+				<TD class="group" id="roz">
+				<DIV class="number">66</DIV>
+				<DIV class="name">Dy</DIV>
+				<DIV class="val">162.500</DIV>
+			</TD>
+				<TD class="group" id="roz">
+				<DIV class="number">67</DIV>
+				<DIV class="name">Ho</DIV>
+				<DIV class="val">164.930</DIV>
+			</TD>
+				<TD class="group" id="roz">
+				<DIV class="number">68</DIV>
+				<DIV class="name">Er</DIV>
+				<DIV class="val">167.259</DIV>
+			</TD>
+			</TD>
+				<TD class="group" id="roz">
+				<DIV class="number">69</DIV>
+				<DIV class="name">Tm</DIV>
+				<DIV class="val">168.934</DIV>
+			</TD>
+				<TD class="group" id="roz">
+				<DIV class="number">70</DIV>
+				<DIV class="name">Yb</DIV>
+				<DIV class="val">173.055</DIV>
+			</TD>
+				<TD class="group" id="roz">
+				<DIV class="number">71</DIV>
+				<DIV class="name">Lu</DIV>
+				<DIV class="val">174.967</DIV>
+			</TD>
+		</TR>
+		<TR>
+			<TD class="group" id="sroz">
+				<DIV class="number">89</DIV>
+				<DIV class="name">Ac</DIV>
+				<DIV class="val">227.028</DIV>
+			</TD>
+				<TD class="group" id="sroz">
+				<DIV class="number">90</DIV>
+				<DIV class="name">Th</DIV>
+				<DIV class="val">232.038</DIV>
+			</TD>
+				<TD class="group" id="sroz">
+				<DIV class="number">91</DIV>
+				<DIV class="name">Pa</DIV>
+				<DIV class="val">231.036</DIV>
+			</TD>
+				<TD class="group" id="sroz">
+				<DIV class="number">92</DIV>
+				<DIV class="name">U</DIV>
+				<DIV class="val">238.029</DIV>
+			</TD>
+			<TD class="group" id="sroz">
+				<DIV class="number">93</DIV>
+				<DIV class="name">Np</DIV>
+				<DIV class="val">237.048</DIV>
+			</TD>
+				<TD class="group" id="sroz">
+				<DIV class="number">94</DIV>
+				<DIV class="name">Pu</DIV>
+				<DIV class="val">244.064</DIV>
+			</TD>
+				<TD class="group" id="sroz">
+				<DIV class="number">95</DIV>
+				<DIV class="name">Am</DIV>
+				<DIV class="val">243.061</DIV>
+			</TD>
+				<TD class="group" id="sroz">
+				<DIV class="number">96</DIV>
+				<DIV class="name">Cm</DIV>
+				<DIV class="val">247.070</DIV>
+			</TD>
+			<TD class="group" id="sroz">
+				<DIV class="number">97</DIV>
+				<DIV class="name">Bk</DIV>
+				<DIV class="val">247.070</DIV>
+			</TD>
+				<TD class="group" id="sroz">
+				<DIV class="number">98</DIV>
+				<DIV class="name">Cf</DIV>
+				<DIV class="val">251.080</DIV>
+			</TD>
+				<TD class="group" id="sroz">
+				<DIV class="number">99</DIV>
+				<DIV class="name">Es</DIV>
+				<DIV class="val">254</DIV>
+			</TD>
+				<TD class="group" id="sroz">
+				<DIV class="number">100</DIV>
+				<DIV class="name">Fm</DIV>
+				<DIV class="val">257.095</DIV>
+			</TD>
+			</TD>
+				<TD class="group" id="sroz">
+				<DIV class="number">101</DIV>
+				<DIV class="name">Md</DIV>
+				<DIV class="val">258.1</DIV>
+			</TD>
+				<TD class="group" id="sroz">
+				<DIV class="number">102</DIV>
+				<DIV class="name">No</DIV>
+				<DIV class="val">259.101</DIV>
+			</TD>
+				<TD class="group" id="sroz">
+				<DIV class="number">103</DIV>
+				<DIV class="name">Lr</DIV>
+				<DIV class="val">262</DIV>
+			</TD>
+		</TR>
+</TABLE>	
+</DIV>
+<DIV contenteditable="true" style="margin : 3% 5% 7%">
+	<TABLE>
+		<TR>
+		<TD class="group" id = "red">
+			<DIV class="name">Alkali Metal</DIV>
+		</TD>
+		<TD class="group" id = "ora">
+			<DIV class="name">Alkaline Earth</DIV>
+		</TD>
+		<TD class="group" id = "zov">
+			<DIV class="name">Transition Metal</DIV>
+		</TD>
+		<TD class="group" id = "zel">
+			<DIV class="name">Basic Metal</DIV>
+		</TD>
+		<TD class="group" id = "bir">
+			<DIV class="name">Semimetal</DIV>
+		</TD>
+		<TD class="group" id = "syn">
+			<DIV class="name">Nonmetal</DIV>
+		</TD>
+		<TD class="group" id = "fio">
+			<DIV class="name">Halogen</DIV>
+		</TD>
+		<TD class="group" id = "pur">
+			<DIV class="name">Noble Gas</DIV>
+		</TD>
+		<TD class="group" id = "roz">
+			<DIV class="name">Lanthanide</DIV>
+		</TD>
+		<TD class="group" id = "sroz">
+			<DIV class="name">Actinide</DIV>
+		</TD>
+	</TR>
+</TABLE>
+</DIV>
+</BODY>
+</HTML>

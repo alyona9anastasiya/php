@@ -1,0 +1,1 @@
+select `title`, `summary` from db_avatseba.film where LOWER(`summary`) LIKE '%vincent%' order by `id_film` ASC;
